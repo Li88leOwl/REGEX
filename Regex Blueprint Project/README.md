@@ -32,3 +32,46 @@ Easily extendable and perfect for parsing logs, validating input, or scraping da
 git clone https://github.com//regex-pattern-extractor.git
 cd regex-pattern-extractor
 python extractor.py
+```
+
+
+# 🔍 Regex Pattern Cheatsheet
+
+A quick reference for common regular expression patterns.
+
+---
+
+## Common Patterns
+
+| **Pattern**                                               | **Matches**                          |
+|-----------------------------------------------------------|--------------------------------------|
+| `\d+`                                                     | Digits                               |
+| `\b\w+\b`                                                 | Words                                |
+| `[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}`           | Email addresses                      |
+| `https?://[^\s]+`                                         | URLs                                 |
+| `\+?\d[\d\s\-\(\)]{7,}\d`                                 | Phone numbers                        |
+| `\b(?:\d{1,3}\.){3}\d{1,3}\b`                             | IPv4 addresses                       |
+| `\$\d+\.?\d*`                                             | Dollar amounts                       |
+| `.{8,}`                                                   | Strings with 8 or more characters (passwords) |
+
+---
+
+### 🚀 Quick Tips
+
+- **`\d`**: Matches any digit (0-9).
+- **`\w`**: Matches any word character (letters, digits, and underscores).
+- **`\b`**: Word boundary.
+- **`+`**: Matches one or more of the preceding token.
+- **`{n,}`**: Matches **n** or more of the preceding token.
+- **`[ ]`**: A character class to match one of the enclosed characters.
+- **`?`**: Matches zero or one of the preceding token (makes it optional).
+  
+---
+
+### ⚡ Customize Your Regex
+
+Feel free to modify and adapt these patterns to your needs. Regex is powerful when you know how to fine-tune it!
+
+> **Pro Tip**: Always test your regular expressions with a tool like [regex101](https://regex101.com/) before using them in your code.
+
+
