@@ -19,7 +19,6 @@
 #    then captures the 3-alnum + dash + 2-digit code.
 pattern = r'\bAgent\s+([A-Za-z0-9]{3}-\d{2})\b'
 
-# Find only codes that are correctly preceded by "Agent"
 valid_codes = re.findall(pattern, text, flags=re.IGNORECASE)
 
 # For comparison: find all 3-characters + dash + 2-digits anywhere (this will include invalid)
